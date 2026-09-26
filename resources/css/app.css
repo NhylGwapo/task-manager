@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eaf6ff;
+    color: #263746;
+}
+
+.page-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 45px auto;
+}
+
+/* =========================
+   MAIN HEADER
+========================= */
+
+.main-header {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    border: 1px solid #cfe8f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.main-header h1 {
+    margin: 0;
+    color: #247ba0;
+    font-size: 28px;
+}
+
+.main-header p {
+    margin: 7px 0 0;
+    color: #71808c;
+}
+
+/* =========================
+   ADD TASK BUTTON
+========================= */
+
+.add-task-button {
+    display: inline-block;
+    background: #5dade2;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.add-task-button:hover {
+    background: #3498db;
+}
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.success-message {
+    background: #dff5e7;
+    color: #267344;
+    border: 1px solid #bde5ca;
+    padding: 13px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   TASKS SECTION
+========================= */
+
+.tasks-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #cfe8f7;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0edf5;
+}
+
+.section-title h2 {
+    margin: 0;
+    color: #2c5364;
+    font-size: 21px;
+}
+
+.section-title span {
+    color: #7a8a96;
+    font-size: 13px;
+}
+
+/* =========================
+   TASK CARD
+========================= */
+
+.task-card {
+    border: 1px solid #d8eaf5;
+    border-radius: 9px;
+    padding: 18px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: #fbfdff;
+}
+
+.task-card:hover {
+    border-color: #a9d5ee;
+}
+
+.task-info {
+    flex: 1;
+}
+
+.task-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.task-title h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 17px;
+}
+
+.task-description {
+    margin: 9px 0;
+    color: #71808c;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.task-date {
+    margin: 8px 0 0;
+    color: #607d8b;
+    font-size: 12px;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+    padding: 5px 9px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.completed {
+    background: #dff5e7;
+    color: #267344;
+}
+
+/* =========================
+   TASK ACTION BUTTONS
+========================= */
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.task-actions form {
+    display: inline;
+}
+
+.button {
+    border: none;
+    padding: 8px 11px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-button {
+    background: #e3f2fd;
+    color: #247ba0;
+}
+
+.edit-button:hover {
+    background: #cfe8f7;
+}
+
+.complete-button {
+    background: #dff5e7;
+    color: #267344;
+}
+
+.complete-button:hover {
+    background: #c9ebd5;
+}
+
+.pending-button {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.pending-button:hover {
+    background: #ffe8a3;
+}
+
+.delete-button {
+    background: #fde3e3;
+    color: #b33a3a;
+}
+
+.delete-button:hover {
+    background: #f8cccc;
+}
+
+/* =========================
+   EMPTY TASK MESSAGE
+========================= */
+
+.empty-message {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.empty-message h2 {
+    margin-bottom: 8px;
+    color: #2c5364;
+}
+
+.empty-message p {
+    color: #71808c;
+    margin-bottom: 22px;
+}
+
+/* =========================
+   TASK INFORMATION FORM
+========================= */
+
+.form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #cfe8f7;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.form-section h2 {
+    margin: 0;
+    color: #2c5364;
+    font-size: 21px;
+}
+
+.form-description {
+    margin: 7px 0 25px;
+    color: #71808c;
+    font-size: 13px;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-button {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #247ba0;
+    padding: 10px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background: #cfe8f7;
+}
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #34495e;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbdfea;
+    border-radius: 7px;
+    background: #fbfdff;
+    color: #34495e;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #5dade2;
+    box-shadow: 0 0 0 3px #e3f2fd;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* =========================
+   FORM BUTTONS
+========================= */
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e0edf5;
+}
+
+.cancel-button {
+    padding: 10px 17px;
+    border-radius: 7px;
+    background: #edf2f5;
+    color: #596b76;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cancel-button:hover {
+    background: #dfe7ec;
+}
+
+.save-button {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 7px;
+    background: #5dade2;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background: #3498db;
+}
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message {
+    background: #fde8e8;
+    color: #a33a3a;
+    border: 1px solid #f2caca;
+    padding: 13px 15px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.error-message ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .page-container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .task-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-actions {
+        width: 100%;
+    }
+
+    .form-section {
+        padding: 22px;
+    }
+
+    .form-buttons {
+        justify-content: stretch;
+    }
+
+    .cancel-button,
+    .save-button {
+        flex: 1;
+        text-align: center;
+    }
+}
+
